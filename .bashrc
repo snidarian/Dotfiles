@@ -104,11 +104,11 @@ alias clas='clear && ls -a'
 alias cllas='clear && ls -la'
 
 
-# Active terminal refresh and list contents in real time
-alias tcls='while [ 1 ]; do cls; sleep 1; done'
-alias tclls='while [ 1 ]; do clls; sleep 1; done'
-alias tclas='while [ 1 ]; do clas; sleep 1; done'
-alias tcllas='while [ 1 ]; do cllas; sleep 1; done'
+# Active terminal refresh and list contents in real time "perpertual clear and list"                     
+alias pcls='while [ 1 ]; do cls; sleep 1; done'
+alias pclls='while [ 1 ]; do clls; sleep 1; done'
+alias pclas='while [ 1 ]; do clas; sleep 1; done'
+alias pcllas='while [ 1 ]; do cllas; sleep 1; done'
 
 
 # colorize diff output
