@@ -99,9 +99,9 @@ alias l='ls -CF'
 
 # Terminal ease-of-use aliases
 alias cls='clear && ls' # Great command. Clears terminal and lists files in current dir
-alias clls='clear && ls -l'
-alias clas='clear && ls -a'
-alias cllas='clear && ls -la'
+alias clls='clear && ls -lG'
+alias clas='clear && ls -aG'
+alias cllas='clear && ls -laG'
 
 
 # Active terminal refresh and list contents in real time "perpertual clear and list"                     
