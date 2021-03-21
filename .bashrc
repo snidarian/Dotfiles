@@ -96,6 +96,8 @@ alias l='ls -CF'
 #---------------------------------------------------------------------------------------------
 # CUSTOM USER ALIAS DEFINITIONS
 
+# "cat-like" aliases                                                                                     
+alias dog='cat -n' #provides numbered output for cat command using -n flag
 
 # Terminal ease-of-use aliases
 alias cls='clear && ls' # Great command. Clears terminal and lists files in current dir
