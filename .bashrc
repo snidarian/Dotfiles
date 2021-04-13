@@ -1,4 +1,3 @@
-
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -107,22 +106,18 @@ alias l='ls -CF'
 # alias reverse_args='f(){ echo "$4 $3 $2 $1"; unset -f f; }; f'
 
 
-
-
 # alarm variable/command (use with eval command)
 alarm_10_reps='i=0; while [[ $i -lt 10 ]]; do echo -ne "\a"; sleep .3; echo -ne "\a"; i=$((i+=1)); done'
 
 
 # Timer Alias -
-alias timer15m='sleep 900; eval "$alarm_10_reps"'
-alias timer10m='sleep 600; eval "$alarm_10_reps"'
-alias timer5m='sleep 300; eval "$alarm_10_reps"'
-alias timer2m='sleep 120; eval "$alarm_10_reps"'
-alias timer1m='sleep 60; eval "$alarm_10_reps"'
+alias timer='f(){ sleep "$1"m; eval "$alarm_10_reps"; unset -f f; }; f'
+
+# ready baked second timer aliases
 alias timer120='sleep 120; eval "$alarm_10_reps"'
 alias timer60='sleep 60; eval "$alarm_10_reps"'
 alias timer30='sleep 30; eval "$alarm_10_reps"'
-alias timer='f(){ sleep "$1"m; eval "$alarm_10_reps"; unset -f f; }; f'
+
 
 # Dog and Hound
 alias dog='cat -n' #provides numbered output for cat command using -n flag
