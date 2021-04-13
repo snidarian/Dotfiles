@@ -103,6 +103,12 @@ alias l='ls -CF'
 # CUSTOM USER ALIAS DEFINITIONS
 
 
+# hint... use wrapper function to gain greater control over passing args to alias commands
+# alias reverse_args='f(){ echo "$4 $3 $2 $1"; unset -f f; }; f'
+
+
+
+
 # alarm variable/command (use with eval command)
 alarm_10_reps='i=0; while [[ $i -lt 10 ]]; do echo -ne "\a"; sleep .3; echo -ne "\a"; i=$((i+=1)); done'
 
@@ -116,7 +122,7 @@ alias timer1m='sleep 60; eval "$alarm_10_reps"'
 alias timer120='sleep 120; eval "$alarm_10_reps"'
 alias timer60='sleep 60; eval "$alarm_10_reps"'
 alias timer30='sleep 30; eval "$alarm_10_reps"'
-alias timertest='sleep 3; eval "$alarm_10_reps"'
+alias timer='f(){ sleep "$1"m; eval "$alarm_10_reps"; unset -f f; }; f'
 
 # Dog and Hound
 alias dog='cat -n' #provides numbered output for cat command using -n flag
