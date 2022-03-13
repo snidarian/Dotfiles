@@ -249,6 +249,8 @@ alias cls='clear && ls'
 alias clls='clear && ls -l'
 alias clas='clear && ls -A'
 alias cllas='clear && ls -lA'
+# source bash aliases from ~/git_workfolders/bash_scripts/alias_definitions.sh
+. ~/git_workfolders/bash_scripts/alias_definitions.sh
 
 
 # enable auto-suggestions based on the history
