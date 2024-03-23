@@ -49,8 +49,8 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # History configurations
 HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=20000
+HISTSIZE=100000
+SAVEHIST=200000
 setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
 setopt hist_ignore_dups       # ignore duplicated commands history list
 setopt hist_ignore_space      # ignore commands that start with space
@@ -249,8 +249,8 @@ alias cls='clear && ls'
 alias clls='clear && ls -l'
 alias clas='clear && ls -A'
 alias cllas='clear && ls -lA'
-# source bash aliases from ~/git_workfolders/bash_scripts/alias_definitions.sh
-. ~/git_workfolders/bash_scripts/alias_definitions.sh
+# source bash aliases from ~/Repositories/bash_scripts/alias_definitions.sh
+. ~/Repositories/bash_scripts/alias_definitions.sh
 
 
 # enable auto-suggestions based on the history
